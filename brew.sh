@@ -62,8 +62,7 @@ brew install gcc
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-# 设置zsh为默认shell
-chsh -s /bin/zsh
+
 
 # Install more recent versions of some OS X tools.
 brew install vim --with-override-system-vi
@@ -143,6 +142,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# 设置zsh为默认shell
+chsh -s /bin/zsh
 
 # Remove outdated versions from the cellar.
 brew cleanup
